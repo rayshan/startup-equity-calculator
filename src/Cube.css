@@ -1,0 +1,62 @@
+.cube {
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    animation: cube-fade-in 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: transform 150ms;
+    will-change: transform;
+    user-select: none;
+    cursor: pointer;
+}
+
+.cube:active {
+    transform: scale(0.8);
+}
+@keyframes cube-fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+.cube * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.cube .shadow {
+    background: black;
+    top: 40%;
+}
+.cube .sides {
+    transform-style: preserve-3d;
+    perspective: 600px;
+}
+.cube .sides div {
+    backface-visibility: hidden;
+    will-change: transform;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Monaco", monospace;
+    font-weight: bold;
+    color: gray;
+    border-radius: 5px;
+}
+.cube .sides .front {
+    transform: rotateY(0deg) translateZ(50px);
+}
+.cube .sides .back {
+    transform: rotateY(-180deg) translateZ(50px);
+}
+.cube .sides .left {
+    transform: rotateY(-90deg) translateZ(50px);
+}
+.cube .sides .right {
+    transform: rotateY(90deg) translateZ(50px);
+}
+.cube .sides .top {
+    transform: rotateX(90deg) translateZ(50px);
+}
+.cube .sides .bottom {
+    transform: rotateX(-90deg) translateZ(50px);
+}

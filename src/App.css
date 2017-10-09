@@ -1,28 +1,131 @@
-.App {
-  text-align: center;
+h1, section {
+    margin: 3rem 3rem 0 3rem;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.ant-input-number,
+.ant-calendar-picker,
+.ant-radio-group,
+.ant-select,
+.ant-btn-group {
+    margin: 0 0.5rem 0 0.5rem !important;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+/* ---------------------------------------------------------------------------------------------- */
+
+.offer {
+    display: flex;
+    flex-direction: column;
 }
 
-.App-title {
-  font-size: 1.5em;
+.offer h2 {
+    width: 100%;
 }
 
-.App-intro {
-  font-size: large;
+.offer .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-y: scroll;
+    padding-bottom: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.offer .grant {
+    flex: 0 0 21rem;
+    height: 21rem;
+}
+
+.add-grant {
+    margin-left: 3rem;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.company .ant-input-number {
+    width: 10rem;
+}
+
+.company fieldset > div + div {
+    margin-top: 1rem;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.events {
+    max-width: 40rem;
+}
+
+.events h2 {
+    position: relative;
+    width: 25rem;
+}
+
+.events fieldset {
+    margin-top: 2rem;
+}
+
+.events .cube {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.events .liquidation-duration {
+    display: flex;
+    margin-bottom: -0.5rem;
+}
+
+.events .liquidation-duration .ant-slider {
+    width: 20rem;
+    transform: translateY(-5px);
+}
+
+.events .liquidation-valuation .ant-input-number {
+    width: 10rem;
+}
+
+.events .ant-select {
+    width: 15rem;
+}
+
+.events .liquidation-stay {
+    margin-top: 3rem;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.valuation {
+    max-width: 40rem;
+}
+
+.positive-gain-view {
+    background-color: var(--success);
+}
+
+.nagative-gain-view {
+    background-color: var(--warning);
+}
+
+.total-compensation .row {
+    display: flex;
+}
+
+.total-compensation .row .left {
+    flex: 1;
+}
+
+.total-compensation .row .right {
+    flex: 1;
+    margin-left: 1rem;
+}
+
+#total-compensation-chart {
+    width: 100%;
+    height: auto;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.next {
+    margin-bottom: 10rem;
 }

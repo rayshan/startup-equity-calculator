@@ -1,5 +1,64 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root {
+    font-size: 14px;
+    --border: #e0e0e0;
+    --success: #dcedc8;
+    --warning: #ffe0b2;
+    --accent: #1890ff;
+}
+
+body {
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Helvetica Neue",
+        "Helvetica",
+        "Roboto",
+        "Segoe UI",
+        sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'liga';
+    color: #212121 !important;
+    line-height: 1.5;
+    text-decoration-skip: ink;
+    -webkit-text-decoration-skip: ink;
+    display: flex;
+    justify-content: center;
+}
+
+@supports (text-decoration-skip: ink spaces edges) {
+    body {
+        text-decoration-skip: ink spaces edges;
+        -webkit-text-decoration-skip: ink spaces edges;
+    }
+}
+
+#root {
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold !important;
+}
+
+h1 {
+    margin-top: 1rem !important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+span.help {
+    border-bottom: 1px dashed var(--accent);
 }

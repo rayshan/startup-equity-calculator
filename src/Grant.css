@@ -1,0 +1,46 @@
+.grant {
+    border: 1px solid var(--border);
+    padding: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.grant + .grant {
+    margin-left: 3rem;
+}
+
+.grant + .grant {
+    margin-left: 3rem;
+}
+
+.grant legend {
+    width: auto;
+    margin: 0;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.grant > div + div {
+    margin-top: 2rem;
+}
+
+.grant .ant-calendar-picker {
+    width: 8rem;
+}
+
+.grant .ant-input-number {
+    width: 6rem;
+}
+
+.grant .remove-grant {
+    position: absolute;
+    top: 0;
+    right: -16px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: transform 150ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 150ms;
+}
+
+.grant:hover .remove-grant {
+    opacity: 1;
+    transform: scale(1);
+}
