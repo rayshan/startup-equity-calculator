@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './App.css';
+import './App.scss';
 
 import Grant from './Grant';
 import Dice from './Cube';
@@ -355,6 +355,7 @@ class App extends Component {
                         <Button type="primary" icon="dislike" disabled />
                     </ButtonGroup>
                 </div>
+                <p>Made with ❤️ by <a href="https://shan.io">Ray Shan</a></p>
             </section>,
         ];
     }

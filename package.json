@@ -4,20 +4,28 @@
   "private": true,
   "dependencies": {
     "antd": "3.0.0-alpha.13",
-    "react": "~16.0.0",
-    "react-dom": "~16.0.0",
-    "react-scripts": "1.0.14"
+    "node-sass": "^4.9.3",
+    "react": "^16.x",
+    "react-dom": "^16.x",
+    "react-scripts": "~2.0.x"
   },
   "scripts": {
     "start": "BROWSER=none react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://shan.io/startup-equity-calculator/",
+  "homepage": "https://rayshan.github.io/startup-equity-calculator/",
   "devDependencies": {
-    "gh-pages": "^1.0.0"
-  }
+    "gh-pages": "^2.0.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "last 2 version",
+    "not dead",
+    "not ie > 0",
+    "not op_mini all"
+  ]
 }
